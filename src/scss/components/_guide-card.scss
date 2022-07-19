@@ -1,0 +1,70 @@
+.guide-card {
+  --p-max-width: #{rem(180)};
+  --p-font-size: #{rem(14)};
+
+  display: inline-grid;
+  gap: rem(16);
+
+  padding: $gutter;
+
+  border-radius: $radius;
+  border: rem(1) solid #EDEFF1;
+  background: $gray;
+
+  user-select: none;
+  cursor: default;
+
+  &.--select {
+    color: $light;
+    background: $secondary;
+  }
+
+  &__name {
+    font-size: rem(16);
+    font-weight: 800;
+  }
+
+  &__text {
+    font-size: rem(14);
+    font-weight: 400;
+  }
+
+  &__bottom, &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: $gutterX2;
+  }
+
+  &__item {
+    gap: rem(10);
+
+    font-size: rem(13);
+
+    &.--counter {
+      &:before {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: rem(24);
+        height: rem(24);
+
+        padding: rem(2);
+
+        content: attr(data-count);
+
+        border: rem(1) solid currentColor;
+        border-radius: $radiusSmall;
+
+      }
+    }
+
+    &.--time {
+      svg {
+        width: rem(24);
+        height: rem(24);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+.gm-m-t {
+  margin-top: $contentGutter;
+}
+
+.gm-m-y {
+  margin: $contentGutterX2 0;
+}
+
+.gm-drop-shadow {
+  filter: drop-shadow(rem(2) rem(4) rem(6) $dark06);
+}
+
+.gm-pointer {
+  pointer-events: none;
+}

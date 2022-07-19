@@ -1,0 +1,30 @@
+@include keyframes(in-transform) {
+  0% {
+    opacity: var(--in-transform-opacity-start, 0);
+    transform: var(--in-transform-transform-start, translate(-100vw, 0));
+  }
+
+  100% {
+    opacity: var(--in-transform-opacity-end, 1);
+    transform: var(--in-transform-transform-end, translate(0, 0));
+  }
+}
+
+@include keyframes(smooth-opacity) {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(rotate) {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

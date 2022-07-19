@@ -1,0 +1,40 @@
+{
+  "name": "guides-cards",
+  "description": "Guides-cards",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Pashchuk Ilya",
+  "license": "ISC",
+  "source": "src/index.html",
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  },
+  "scripts": {
+    "clean-dist": "rm -rf dist && mkdir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run clean-dist && parcel src/index.html --open",
+    "build": "npm run clean-dist && parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/resolver-glob": "^2.5.0",
+    "@parcel/transformer-image": "^2.1.1",
+    "@parcel/transformer-sass": "^2.5.0",
+    "autoprefixer": "^10.4.5",
+    "cross-env": "^7.0.3",
+    "p5": "^1.4.1",
+    "parcel": "latest",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "postcss": "^8.4.12",
+    "posthtml-img-autosize": "^0.1.6",
+    "posthtml-include": "^1.7.3",
+    "posthtml-modules": "^0.8.1",
+    "sass": "^1.51.0",
+    "swiper": "^8.1.4"
+  },
+  "dependencies": {
+    "cssnano": "^5.1.7",
+    "scss": "^0.2.4"
+  }
+}

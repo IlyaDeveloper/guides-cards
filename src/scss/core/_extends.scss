@@ -1,0 +1,10 @@
+%block {
+  display: flex;
+  flex-flow: row;
+
+  max-height: calc(100vh - 0.1px);
+}
+
+%content {
+  padding: $gutterX4 0;
+}

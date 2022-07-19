@@ -1,0 +1,23 @@
+.guides {
+  display: grid;
+  @extend %content;
+
+  &__caption {
+    margin: rem(12) 0 rem(32);
+
+    font-size: rem(28);
+    font-weight: bold;
+
+    &.--sub {
+      margin: 0 0 rem(20);
+      font-size: rem(18);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: rem(16);
+    align-items: center;
+  }
+}

@@ -1,0 +1,114 @@
+//* Map size devices for media query
+$wideScreens: (
+  phonesSm: 340px,
+  phones: 480px,
+  phonesLg: 640px,
+  tablet: 768px,
+  laptop: 992px,
+  desktopSm: 1024px,
+  desktopMd: 1170px,
+  desktop: 1280px,
+  notebook: 1366px,
+  notebookLg: 1600px,
+  fullHD: 1800px,
+  retina: 2100px,
+  retina4k: 3656px,
+  retina5k: 5100px,
+  retina8k: 7600px
+);
+
+$contentScale: (
+  //(
+  //  direction: 'max-width',
+  //  wide: screens(laptop),
+  //  scale: 89%
+  //),
+  //(
+  //  direction: 'max-width',
+  //  wide: screens(phonesLg),
+  //  scale: 86%
+  //),
+  //(
+  //  direction: 'max-width',
+  //  wide: screens(phones),
+  //  scale: 80%
+  //),
+  (
+    direction: 'min-width',
+    wide: screens(laptop),
+    scale: 126%
+  ),
+);
+
+//* Main content && elements sizes
+$guides: false;
+$guidesBody: false;
+$guidesContainer: false;
+$guidesSideLine: true;
+$guidesContainerSpacer: true;
+$guidesContainerSpacerColor: rgba(lightgreen, 0.5);
+$guidesContainerOpacity: .6;
+$guidesCenter: true;
+$guides-color: #ff3e23;
+$guides-column: 12;
+
+$containerLimit: rem(1170);
+$containerOffset: calc(var(--container-gutter) * -1);
+$gutterSmall: var(--gutter-small, rem(8)) !default;
+$gutter: var(--gutter, rem(16)) !default;
+$gutterX2: var(--gutterX2, rem(24)) !default;
+$gutterX3: var(--gutterX3, rem(48)) !default;
+$gutterX4: var(--gutterX4, rem(96)) !default;
+$sectionSpacer: var(--section-spacer, rem(70)) !default;
+
+$radiusSmall: rem(6);
+$radius: rem(10);
+$radiusLarge: rem(16);
+
+$primary: #182235;
+$secondary: #840177;
+$tertiary: #2C406D;
+$gray: #F1F2F3;
+
+$light: #ffffff;
+$dark: $primary;
+
+//* transitions && animations
+$transition-default: 0.3s linear !default;
+$transition-border: border-color $transition-default !default;
+$transition-shadow: box-shadow $transition-default !default;
+
+$transition-start-delay: 1s;
+$transition-start-duration: 2s;
+
+$base-color: $primary !default;
+$base-font-size: 16px !default;
+
+$font-family-primary: 'Inter', sans-serif; //'Montserrat', sans-serif;
+
+//* Icons
+$font-path: '../../dist/fonts' !default;
+
+$icon-font-family: "justttwic-fonts" !default;
+$icon-font-prefix: 'jti-';
+$icon-font-path: $font-path + '/#{$icon-font-family}' !default;
+
+$icons-font-map: (
+);
+
+//* Scrolls
+$scroll-size: var(--scroll-size, rem(5));
+$scroll-border-radius: 0;
+$scroll-thumb-color: $secondary;
+$scroll-thumb-hover-color: $secondary;
+$scroll-track-color: $light;
+$scroll-track-line: inset 0 0 0 0px $scroll-track-color;
+
+//* z-index
+$z-index-step: 10 !default;
+$z-index: (
+  start: 10,
+  middle: 50,
+  header: 100,
+  modal: 1000
+) !default;
